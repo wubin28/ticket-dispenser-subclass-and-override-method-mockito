@@ -1,8 +1,4 @@
-public class TurnNumberSequence {
-    private static int _turnNumber = 0;
+public abstract class TurnNumberSequence {
 
-    public int getNextTurnNumber()
-    {
-        return _turnNumber++;
-    }
+    public abstract int getNextTurnNumber();
 }
