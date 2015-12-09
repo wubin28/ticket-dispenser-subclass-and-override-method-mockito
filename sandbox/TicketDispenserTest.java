@@ -88,6 +88,22 @@ public class TicketDispenserTest {
         assertEquals(2001, firstTicketOfRegularCustomer.getTurnNumber());
     }
 
-    // TODO: the_dispensers_for_VIP_and_regular_customers_could_be_used_together
+    @Test
+    public void the_dispensers_for_VIP_and_regular_customers_could_be_used_together() {
+        // Arrange
+        TurnNumberSequence turnNumberSequenceVip = new TurnNumberSequenceVip(1001);
+        TicketDispenser ticketDispenserVip = new TicketDispenser(turnNumberSequenceVip);
+
+        TurnNumberSequence turnNumberSequenceRegular = new TurnNumberSequenceRegular(2001);
+        TicketDispenser ticketDispenserRegular = new TicketDispenser(turnNumberSequenceRegular);
+
+        // Act
+        TurnTicket firstTicketOfVipCustomer = ticketDispenserVip.getTurnTicket();
+        TurnTicket firstTicketOfRegularCustomer = ticketDispenserRegular.getTurnTicket();
+
+        // Assert
+        assertEquals(1001, firstTicketOfVipCustomer.getTurnNumber());
+        assertEquals(2001, firstTicketOfRegularCustomer.getTurnNumber());
+    }
 }
 
