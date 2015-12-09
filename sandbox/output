@@ -1,4 +1,6 @@
-TicketDispenserTest.java:81: error: incompatible types: TurnNumberSequenceRegular cannot be converted to TurnNumberSequence
-        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequenceRegular(2001);
-                                                       ^
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+......
+Time: 0.45
+
+OK (6 tests)
+
