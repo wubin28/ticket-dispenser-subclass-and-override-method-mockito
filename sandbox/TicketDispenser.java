@@ -2,7 +2,7 @@ public class TicketDispenser {
     private TurnNumberSequence turnNumberSequence;
 
     public TicketDispenser() {
-        this(new TurnNumberSequence());
+        this(new TurnNumberSequenceVip(0));
     }
 
     public TicketDispenser(TurnNumberSequence turnNumberSequence) {
