@@ -7,6 +7,6 @@ public class TurnNumberSequenceVip extends TurnNumberSequence {
 
     @Override
     public int getNextTurnNumber() {
-        return turnNumber;
+        return turnNumber++;
     }
 }
