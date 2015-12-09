@@ -1,6 +1,6 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-....
-Time: 0.7
-
-OK (4 tests)
-
+TicketDispenserTest.java:68: error: cannot find symbol
+        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequenceVip(1001);
+                                                       ^
+  symbol:   class TurnNumberSequenceVip
+  location: class TicketDispenserTest
+1 error

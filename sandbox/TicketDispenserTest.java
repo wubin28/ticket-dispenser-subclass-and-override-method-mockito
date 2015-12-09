@@ -62,7 +62,19 @@ public class TicketDispenserTest {
         verify(mockTurnNumberSequence).getNextTurnNumber();
     }
 
-    // TODO: the_turn_number_of_VIP_customers_starts_from_1001
+    @Test
+    public void the_turn_number_of_VIP_customers_starts_from_1001() {
+        // Arrange
+        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequenceVip(1001);
+        TicketDispenser vipCustomerTicketDispenser = new TicketDispenser(vipTurnNumberSequence);
+
+        // Act
+        TurnTicket firstTicketOfVipCustomer = vipCustomerTicketDispenser.getTurnTicket();
+
+        // Assert
+        assertEquals(1001, firstTicketOfVipCustomer.getTurnNumber());
+    }
+
     // TODO: the_turn_number_of_regular_customers_starts_from_2001
     // TODO: the_dispensers_for_VIP_and_regular_customers_could_be_used_together
 }
