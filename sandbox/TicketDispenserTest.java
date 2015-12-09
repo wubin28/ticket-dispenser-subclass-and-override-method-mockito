@@ -75,6 +75,19 @@ public class TicketDispenserTest {
         assertEquals(1001, firstTicketOfVipCustomer.getTurnNumber());
     }
 
-    // TODO: the_turn_number_of_regular_customers_starts_from_2001
+    @Test
+    public void the_turn_number_of_regular_customers_starts_from_2001() {
+        // Arrange
+        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequenceRegular(2001);
+        TicketDispenser regularCustomerTicketDispenser = new TicketDispenser(regularTurnNumberSequence);
+
+        // Act
+        TurnTicket firstTicketOfRegularCustomer = regularCustomerTicketDispenser.getTurnTicket();
+
+        // Assert
+        assertEquals(2001, firstTicketOfRegularCustomer.getTurnNumber());
+    }
+
     // TODO: the_dispensers_for_VIP_and_regular_customers_could_be_used_together
 }
+
