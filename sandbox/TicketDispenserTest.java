@@ -33,7 +33,7 @@ public class TicketDispenserTest {
     }
 
     @Test
-    public void the_new_ticket_should_have_the_next_turn_number_when_the_number_is_given_to_the_dispenser() {
+    public void the_new_ticket_should_have_a_turn_number_when_the_number_is_given_to_the_dispenser() {
         // Given
         MockTurnNumberSequence mockTurnNumberSequence = new MockTurnNumberSequence();
         mockTurnNumberSequence.arrangeNextTurnNumber(11);
@@ -48,7 +48,7 @@ public class TicketDispenserTest {
     }
 
     @Test
-    public void the_new_ticket_should_have_the_next_turn_number_when_the_number_is_given_to_the_dispenser_using_mockito() {
+    public void the_new_ticket_should_have_a_turn_number_when_the_number_is_given_to_the_dispenser_using_mockito() {
         // Given
         TurnNumberSequence mockTurnNumberSequence = mock(TurnNumberSequence.class);
         when(mockTurnNumberSequence.getNextTurnNumber()).thenReturn(11);
