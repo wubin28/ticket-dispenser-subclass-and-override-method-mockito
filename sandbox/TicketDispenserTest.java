@@ -61,4 +61,8 @@ public class TicketDispenserTest {
         assertEquals(11, newTicket.getTurnNumber());
         verify(mockTurnNumberSequence).getNextTurnNumber();
     }
+
+    // TODO: the_turn_number_of_VIP_customers_starts_from_1001
+    // TODO: the_turn_number_of_regular_customers_starts_from_2001
+    // TODO: the_dispensers_for_VIP_and_regular_customers_could_be_used_together
 }
