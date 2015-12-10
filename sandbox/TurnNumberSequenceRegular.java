@@ -1,5 +1,5 @@
 public class TurnNumberSequenceRegular extends TurnNumberSequence {
-    private static int turnNumber;
+    private int turnNumber;
 
     public TurnNumberSequenceRegular(int startTurnNumber) {
         turnNumber = startTurnNumber;

@@ -1,5 +1,5 @@
 public class TurnNumberSequenceVip extends TurnNumberSequence {
-    private static int turnNumber;
+    private int turnNumber;
 
     public TurnNumberSequenceVip(int startTurnNumber) {
         turnNumber = startTurnNumber;
