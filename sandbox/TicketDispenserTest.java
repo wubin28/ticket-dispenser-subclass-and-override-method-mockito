@@ -79,7 +79,7 @@ public class TicketDispenserTest {
     @Test
     public void the_turn_number_of_regular_customers_starts_from_2001() {
         // Arrange
-        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequenceRegular(2001);
+        TurnNumberSequence regularTurnNumberSequence = new TurnNumberSequence(2001);
         TicketDispenser regularCustomerTicketDispenser = new TicketDispenser(regularTurnNumberSequence);
 
         // Act
