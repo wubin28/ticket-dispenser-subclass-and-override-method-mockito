@@ -95,7 +95,7 @@ public class TicketDispenserTest {
         TurnNumberSequence turnNumberSequenceVip = new TurnNumberSequence(1001);
         TicketDispenser ticketDispenserVip = new TicketDispenser(turnNumberSequenceVip);
 
-        TurnNumberSequence turnNumberSequenceRegular = new TurnNumberSequenceRegular(2001);
+        TurnNumberSequence turnNumberSequenceRegular = new TurnNumberSequence(2001);
         TicketDispenser ticketDispenserRegular = new TicketDispenser(turnNumberSequenceRegular);
 
         // Act
