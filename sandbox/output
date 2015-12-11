@@ -1,8 +1,3 @@
-TicketDispenser.java:5: error: cannot find symbol
-        this(new TurnNumberSequenceVip(0));
-                 ^
-  symbol:   class TurnNumberSequenceVip
-  location: class TicketDispenser
 TicketDispenserTest.java:23: error: cannot find symbol
         TurnNumberSequenceRegular turnNumberSequenceRegular = new TurnNumberSequenceRegular(0);
         ^
@@ -33,4 +28,4 @@ TicketDispenserTest.java:98: error: cannot find symbol
                                                            ^
   symbol:   class TurnNumberSequenceRegular
   location: class TicketDispenserTest
-7 errors
+6 errors
