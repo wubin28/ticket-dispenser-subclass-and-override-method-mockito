@@ -1,12 +1,12 @@
-TicketDispenserTest.java:23: error: cannot find symbol
-        TurnNumberSequenceRegular turnNumberSequenceRegular = new TurnNumberSequenceRegular(0);
-        ^
-  symbol:   class TurnNumberSequenceRegular
+TicketDispenserTest.java:24: error: cannot find symbol
+        TicketDispenser anotherDispenser = new TicketDispenser(turnNumberSequenceRegular);
+                                                               ^
+  symbol:   variable turnNumberSequenceRegular
   location: class TicketDispenserTest
-TicketDispenserTest.java:23: error: cannot find symbol
-        TurnNumberSequenceRegular turnNumberSequenceRegular = new TurnNumberSequenceRegular(0);
-                                                                  ^
-  symbol:   class TurnNumberSequenceRegular
+TicketDispenserTest.java:25: error: cannot find symbol
+        TicketDispenser dispenser = new TicketDispenser(turnNumberSequenceRegular);
+                                                        ^
+  symbol:   variable turnNumberSequenceRegular
   location: class TicketDispenserTest
 TicketDispenserTest.java:69: error: cannot find symbol
         TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequenceVip(1001);
