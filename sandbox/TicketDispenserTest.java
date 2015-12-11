@@ -21,8 +21,8 @@ public class TicketDispenserTest {
     public void a_new_ticket_should_have_the_turn_number_subsequent_to_the_previous_one_from_another_dispenser() {
         // Given
         TurnNumberSequence turnNumberSequence = new TurnNumberSequence(0);
-        TicketDispenser anotherDispenser = new TicketDispenser(turnNumberSequenceRegular);
-        TicketDispenser dispenser = new TicketDispenser(turnNumberSequenceRegular);
+        TicketDispenser anotherDispenser = new TicketDispenser(turnNumberSequence);
+        TicketDispenser dispenser = new TicketDispenser(turnNumberSequence);
 
         // When
         TurnTicket previousTicketFromAnotherDispenser = anotherDispenser.getTurnTicket();
