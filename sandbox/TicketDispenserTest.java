@@ -66,7 +66,7 @@ public class TicketDispenserTest {
     @Test
     public void the_turn_number_of_VIP_customers_starts_from_1001() {
         // Arrange
-        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequenceVip(1001);
+        TurnNumberSequence vipTurnNumberSequence = new TurnNumberSequence(1001);
         TicketDispenser vipCustomerTicketDispenser = new TicketDispenser(vipTurnNumberSequence);
 
         // Act
