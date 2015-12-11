@@ -92,7 +92,7 @@ public class TicketDispenserTest {
     @Test
     public void the_dispensers_for_VIP_and_regular_customers_could_be_used_together() {
         // Arrange
-        TurnNumberSequence turnNumberSequenceVip = new TurnNumberSequenceVip(1001);
+        TurnNumberSequence turnNumberSequenceVip = new TurnNumberSequence(1001);
         TicketDispenser ticketDispenserVip = new TicketDispenser(turnNumberSequenceVip);
 
         TurnNumberSequence turnNumberSequenceRegular = new TurnNumberSequenceRegular(2001);

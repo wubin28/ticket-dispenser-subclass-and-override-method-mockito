@@ -1,11 +1,6 @@
-TicketDispenserTest.java:95: error: cannot find symbol
-        TurnNumberSequence turnNumberSequenceVip = new TurnNumberSequenceVip(1001);
-                                                       ^
-  symbol:   class TurnNumberSequenceVip
-  location: class TicketDispenserTest
 TicketDispenserTest.java:98: error: cannot find symbol
         TurnNumberSequence turnNumberSequenceRegular = new TurnNumberSequenceRegular(2001);
                                                            ^
   symbol:   class TurnNumberSequenceRegular
   location: class TicketDispenserTest
-2 errors
+1 error
